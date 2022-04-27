@@ -9,22 +9,32 @@
  * @author Jessica
  */
 public class informacion {
-
+    
     /**
-     * @param args the command line arguments
+     
      */
     
         // TODO code application logic here
         String nombre;
         String carrera;
         int Numsemestre;
+        String Escuela;
 
-    public informacion(String nombre, String carrera, int Numsemestre) {
+    public informacion(String nombre, String carrera, int Numsemestre, String Escuela) {
         this.nombre = nombre;
         this.carrera = carrera;
         this.Numsemestre = Numsemestre;
+       this.Escuela = Escuela;
         
         
+    }
+
+    public String getEscuela() {
+        return "La institucion a la que pertenece es: " + Escuela;
+    }
+
+    public void setEscuela(String Escuela) {
+        this.Escuela = Escuela;
     }
 
     public String getNombre() {
@@ -44,7 +54,7 @@ public class informacion {
     }
 
     public String getNumsemestre() {
-        return "El semestre que cursa es: "+ Numsemestre;
+        return "El semestre que cursa es: "  + Numsemestre;
     }
 
     public void setNumsemestre(int Numsemestre) {

@@ -16,9 +16,9 @@ public class Datos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        informacion info = new informacion  ("Jessica", "Info ", 2);
+        informacion info = new informacion  ("Jessica", "Info ", 2 , "tec2");
         //encapsular
-        String Numcon = info.getNombre()+""+info.getCarrera()+""+info.getNumsemestre()+"";
+        String Numcon = info.getNombre()+""+info.getCarrera()+""+info.getNumsemestre()+""+ info.getEscuela() +"";
         System.out.println("Datos del alumno:" +Numcon);
                 
         
